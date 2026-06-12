@@ -104,7 +104,7 @@ ax = sns.heatmap(
     fmt="d",
     cmap=COMMON_CMAP,
     linewidths=0.5,
-    annot_kws={"size": 10}
+    annot_kws={"size": 11}
 )
 
 ax.set_title(
@@ -113,11 +113,11 @@ ax.set_title(
     pad=12
 )
 
-ax.set_xlabel("Workload Type")
-ax.set_ylabel("Thread Organisation Model")
+ax.set_xlabel("Workload Type", fontsize=13, labelpad=11) 
+ax.set_ylabel("Thread Organisation Model", fontsize=13, labelpad=11) 
 
-plt.xticks(rotation=20, ha="right", fontsize=9)
-plt.yticks(rotation=0, fontsize=9)
+plt.xticks(rotation=20, ha="right", fontsize=11) 
+plt.yticks(rotation=0, fontsize=11)
 
 plt.tight_layout()
 
@@ -135,7 +135,7 @@ ax = sns.heatmap(
     fmt="d",
     cmap=COMMON_CMAP,
     linewidths=0.5,
-    annot_kws={"size": 9}
+    annot_kws={"size": 11}
 )
 
 ax.set_title(
@@ -144,11 +144,11 @@ ax.set_title(
     pad=12
 )
 
-ax.set_xlabel("Concurrency Primitive Category")
-ax.set_ylabel("Thread Organisation Model")
+ax.set_xlabel("Concurrency Primitive Category", fontsize=13, labelpad=11) 
+ax.set_ylabel("Thread Organisation Model", fontsize=13, labelpad=11) 
 
-plt.xticks(rotation=20, ha="right", fontsize=9)
-plt.yticks(rotation=0, fontsize=9)
+plt.xticks(rotation=20, ha="right", fontsize=11) 
+plt.yticks(rotation=0, fontsize=11)
 
 plt.tight_layout()
 

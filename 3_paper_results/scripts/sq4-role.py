@@ -8,6 +8,10 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_FILE = SCRIPT_DIR / ".." / ".." / "2_manual_analysis" / "analysis_files" / "final_no_evidence.csv"
 FIGURES_DIR = SCRIPT_DIR / ".." / "figures"
 
+TITLE_KW = dict(fontsize=14, pad=12)
+AXIS_KW = dict(fontsize=13, labelpad=11)
+TICK_SIZE = 11
+
 df = pd.read_csv(DATA_FILE, sep=";")
 
 df.columns = (
@@ -80,31 +84,37 @@ group_order = [
     "F. Other / Unclassified"
 ]
 
-role_tm_grouped = role_tm_grouped.reindex(
-    [g for g in group_order if g in role_tm_grouped.index]
-)
+role_tm_grouped = role_tm_grouped.reindex(group_order).fillna(0)
 
-plt.figure(figsize=(12, 7))
+plt.figure(figsize=(11, 6))
 
-sns.heatmap(
+ax = sns.heatmap(
     role_tm_grouped,
     annot=True,
     fmt="d",
     cmap="crest",
     linewidths=0.5,
+    annot_kws={"size": 11},
     cbar_kws={"shrink": 0.8}
 )
 
-plt.title("Relationship Between Functional Role Groups and Thread Organisation Models")
-plt.xlabel("Thread Organisation Model")
-plt.ylabel("Functional Role Group")
+ax.set_title(
+    "Relationship Between Functional Role Groups and Thread Organisation Models",
+    **TITLE_KW
+)
 
-plt.xticks(rotation=25, ha="right")
+ax.set_xlabel("Thread Organisation Model", **AXIS_KW)
+ax.set_ylabel("Functional Role Group", **AXIS_KW)
+
+ax.tick_params(axis="x", labelsize=TICK_SIZE)
+ax.tick_params(axis="y", labelsize=TICK_SIZE)
+
+plt.xticks(rotation=20, ha="right")
 plt.yticks(rotation=0)
 
 plt.tight_layout()
-plt.savefig(FIGURES_DIR / "role_group_thread_model_heatmap.png", dpi=300, bbox_inches="tight")
 
+plt.savefig(FIGURES_DIR / "role_group_thread_model_heatmap.png", dpi=300, bbox_inches="tight")
 plt.close()
 
 # FUNCTIONAL ROLE DISTRIBUTION (A–E ORDERED)
@@ -164,17 +174,19 @@ for group in ["A", "B", "C", "D", "E"]:
 plt.figure(figsize=(10, 6))
 
 plt.barh(ordered_labels, ordered_counts)
-plt.xlabel("Number of Analysed Files")
-plt.ylabel("Functional Role")
-plt.title("Distribution of Functional Roles Across Analysed Files")
+
+plt.xlabel("Number of Analysed Files", fontsize=13, labelpad=10)
+plt.ylabel("Functional Role", fontsize=13, labelpad=10)
+plt.title("Distribution of Functional Roles Across Analysed Files", fontsize=14, pad=12)
+
+plt.xticks(fontsize=11)
+plt.yticks(fontsize=11)
 
 plt.gca().invert_yaxis()
 
 plt.tight_layout()
 plt.savefig(FIGURES_DIR / "functional_role_distribution.png", dpi=300, bbox_inches="tight")
-
 plt.close()
-
 
 print("- role_group_thread_model_heatmap.png")
 print("- functional_role_distribution.png")
