@@ -1,0 +1,104 @@
+{
+  "selected_repositories": [
+    {
+      "repository_name": "rustdesk/rustdesk",
+      "stars": 113192,
+      "revision": "d4a1430c27e4d07cc4e37f737a256b23eaf52cd5"
+    },
+    {
+      "repository_name": "dani-garcia/vaultwarden",
+      "stars": 59502,
+      "revision": "07aa377af77ea03c464fcba243b62e743c98ce4e"
+    },
+    {
+      "repository_name": "topjohnwu/Magisk",
+      "stars": 60140,
+      "revision": "9d0b5298afd54b320767af7019645f03e96f362f"
+    },
+    {
+      "repository_name": "alacritty/alacritty",
+      "stars": 63761,
+      "revision": "9b7419c3e4086476967e37e64372f412d1ebaa2b"
+    },
+    {
+      "repository_name": "helix-editor/helix",
+      "stars": 44168,
+      "revision": "3beb268068d23294a26b47eab43b0a13a2a3a951"
+    },
+    {
+      "repository_name": "farion1231/cc-switch",
+      "stars": 56147,
+      "revision": "7f0c7b11e5e14303a17de238baf51b0cb6724435"
+    },
+    {
+      "repository_name": "sharkdp/fd",
+      "stars": 42760,
+      "revision": "2250bb0ad13bf2ab93f4d56977811e648b3f62dc"
+    },
+    {
+      "repository_name": "nushell/nushell",
+      "stars": 39256,
+      "revision": "f669627956dbd7d1c7733ea15c42865f947abfdd"
+    },
+    {
+      "repository_name": "lapce/lapce",
+      "stars": 38324,
+      "revision": "c9e4c33948033f10f003991a037d949a708eedf8"
+    },
+    {
+      "repository_name": "sxyazi/yazi",
+      "stars": 37232,
+      "revision": "1caa5807c6d6f2be4e543eaaa5e1bdc475d8a695"
+    },
+    {
+      "repository_name": "firecracker-microvm/firecracker",
+      "stars": 34046,
+      "revision": "719497761c40d8f6cc61efb8de8adc0e66c58d84"
+    },
+    {
+      "repository_name": "casey/just",
+      "stars": 33260,
+      "revision": "5e2b99fcb405af1309eb3861105e3168a49d597a"
+    },
+    {
+      "repository_name": "surrealdb/surrealdb",
+      "stars": 31976,
+      "revision": "a97d3af85d79aa7101238bbe389d211284e7cd98"
+    },
+    {
+      "repository_name": "qdrant/qdrant",
+      "stars": 30889,
+      "revision": "eabee371fda447974a94d29fbaa675a6a596cc7b"
+    },
+    {
+      "repository_name": "jdx/mise",
+      "stars": 27466,
+      "revision": "d1ef29455a44f27377518496ecee7c428f43b3a6"
+    },
+    {
+      "repository_name": "rustfs/rustfs",
+      "stars": 26853,
+      "revision": "0d7e0a814f4e98e274b8eef7228e8877840fa078"
+    },
+    {
+      "repository_name": "cloudflare/pingora",
+      "stars": 26513,
+      "revision": "452813e6b4e03d18779eb81ecd7eb1dc508ba7bf"
+    },
+    {
+      "repository_name": "neondatabase/neon",
+      "stars": 21657,
+      "revision": "6a35a3e9f149798df1b1761ee64099d8d75fbe90"
+    },
+    {
+      "repository_name": "tursodatabase/turso",
+      "stars": 18416,
+      "revision": "9cbc321d383b46bc2d1d9a15c3f671e767a1c172"
+    },
+    {
+      "repository_name": "ast-grep/ast-grep",
+      "stars": 13634,
+      "revision": "14701b08c5fe5f2bcccecb6cb2483fbc2d4f7fa1"
+    }
+  ]
+}

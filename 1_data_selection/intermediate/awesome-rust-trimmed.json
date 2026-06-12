@@ -1,0 +1,232 @@
+{
+  "uncategorized": {
+    "clash-verge-rev/clash-verge-rev": 114819,
+    "denoland/deno": 106566,
+    "alacritty/alacritty": 63761,
+    "topjohnwu/Magisk": 60140,
+    "typst/typst": 53193
+  },
+  "Audio and Music": {
+    "Spotifyd/spotifyd": 10610,
+    "aome510/spotify-player": 6650,
+    "hrkfdn/ncspot": 6569,
+    "chaosprint/glicol": 2951,
+    "mierak/rmpc": 2726
+  },
+  "Blockchain": {
+    "linera-io/linera-protocol": 32125,
+    "diem/diem": 16682,
+    "foundry-rs/foundry": 10311,
+    "datahaven-xyz/datahaven": 7985,
+    "MystenLabs/sui": 7673
+  },
+  "Database": {
+    "surrealdb/surrealdb": 31976,
+    "qdrant/qdrant": 30889,
+    "rustfs/rustfs": 26853,
+    "neondatabase/neon": 21657,
+    "tursodatabase/turso": 18416
+  },
+  "Embedded": {
+    "HaoboGu/rmk": 1607,
+    "rust-osdev/uefi-rs": 1596
+  },
+  "File manager": {
+    "spacedriveapp/spacedrive": 37925,
+    "sxyazi/yazi": 37232,
+    "Canop/broot": 12638,
+    "sayanarijit/xplr": 4741,
+    "kamiyaa/joshuto": 3694
+  },
+  "Finance": {
+    "nautechsystems/nautilus_trader": 22349,
+    "tarkah/tickrs": 1576,
+    "tackler-ng/tackler": 145,
+    "Sajjon/klirr": 128
+  },
+  "Games": {
+    "louis-e/arnis": 15362,
+    "citybound/citybound": 8105,
+    "mtkennerly/ludusavi": 5376,
+    "cristicbz/rust-doom": 2411,
+    "ozkriff/zemeroth": 1445
+  },
+  "Graphics": {
+    "flxzt/rnote": 11173,
+    "ivanceras/svgbob": 4181,
+    "linebender/resvg": 3804,
+    "storytold/artcraft": 1569,
+    "wahn/rs_pbrt": 836
+  },
+  "Image processing": {
+    "visioncortex/vtracer": 5923,
+    "oxipng/oxipng": 3928,
+    "imager-io/imager": 725
+  },
+  "Industrial automation": {
+    "dora-rs/dora": 3727,
+    "locka99/opcua": 568,
+    "slowtec/tokio-modbus": 534
+  },
+  "Message Queue": {
+    "robustmq/robustmq": 1568,
+    "mxsm/rocketmq-rust": 1508,
+    "rmqtt/rmqtt": 938,
+    "lonewolf-io/narwhal": 131
+  },
+  "MLOps": {
+    "tensorzero/tensorzero": 11289
+  },
+  "Observability": {
+    "vectordotdev/vector": 21742,
+    "openobserve/openobserve": 18671,
+    "quickwit-oss/quickwit": 11122,
+    "open-telemetry/opentelemetry-rust": 2557,
+    "hubblo-org/scaphandre": 1933
+  },
+  "Operating systems": {
+    "tock/tock": 6299,
+    "asterinas/asterinas": 4441,
+    "theseus-os/Theseus": 3152,
+    "hexagonal-sun/moss-kernel": 1937,
+    "Andy-Python-Programmer/aero": 1241
+  },
+  "Package Managers": {
+    "helsing-ai/buffrs": 353
+  },
+  "Payments": {
+    "juspay/hyperswitch": 42568
+  },
+  "Productivity": {
+    "farion1231/cc-switch": 56147,
+    "rtk-ai/rtk": 38650,
+    "screenpipe/screenpipe": 18454,
+    "espanso/espanso": 13711,
+    "ast-grep/ast-grep": 13634
+  },
+  "Routing protocols": {
+    "osrg/rustybgp": 578,
+    "holo-routing/holo": 511
+  },
+  "Security tools": {
+    "bee-san/RustScan": 19693,
+    "epi052/feroxbuster": 7705,
+    "mullvad/mullvadvpn-app": 7025,
+    "EFForg/rayhunter": 5148,
+    "AFLplusplus/LibAFL": 2562
+  },
+  "System tools": {
+    "sharkdp/bat": 58620,
+    "sharkdp/fd": 42760,
+    "nushell/nushell": 39256,
+    "ajeetdsouza/zoxide": 36183,
+    "fish-shell/fish-shell": 33323
+  },
+  "Task scheduling": {
+    "stav121/tasklet": 90
+  },
+  "Text editors": {
+    "zed-industries/zed": 80586,
+    "helix-editor/helix": 44168,
+    "lapce/lapce": 38324,
+    "sinelaw/fresh": 6958,
+    "curlpipe/ox": 3695
+  },
+  "Text processing": {
+    "phiresky/ripgrep-all": 9595,
+    "pemistahl/grex": 8112,
+    "yoav-lavi/melody": 4747,
+    "dathere/qsv": 3623,
+    "ashvardanian/StringZilla": 3444
+  },
+  "Utilities": {
+    "rustdesk/rustdesk": 113192,
+    "dani-garcia/vaultwarden": 59502,
+    "ruvnet/RuView": 50916,
+    "warpdotdev/warp": 46549,
+    "thewh1teagle/vibe": 5947
+  },
+  "Video": {
+    "gyroflow/gyroflow": 8450,
+    "xiph/rav1e": 4086,
+    "harlanc/xiu": 2279,
+    "dertuxmalwieder/yaydl": 316,
+    "tgotwig/vidmerger": 149
+  },
+  "Virtualization": {
+    "firecracker-microvm/firecracker": 34046,
+    "kata-containers/kata-containers": 7827,
+    "youki-dev/youki": 7364,
+    "superradcompany/microsandbox": 5894,
+    "tailhook/vagga": 1897
+  },
+  "Web": {
+    "LemmyNet/lemmy": 14356,
+    "agrinman/tunnelto": 6608,
+    "redlib-org/redlib": 3287,
+    "stoatchat/stoatchat": 2998,
+    "Plume-org/Plume": 2214
+  },
+  "Web Servers": {
+    "cloudflare/pingora": 26513,
+    "svenstaro/miniserve": 7570,
+    "TheWaWaR/simple-http-server": 3411,
+    "static-web-server/static-web-server": 2228,
+    "orhun/rustypaste": 1153
+  },
+  "Workflow Automation": {
+    "aaif-goose/goose": 43575,
+    "casey/just": 33260,
+    "dandavison/delta": 30547,
+    "jj-vcs/jj": 28444,
+    "jdx/mise": 27466
+  },
+  "Build system": {
+    "rolldown/rolldown": 13383,
+    "facebook/buck2": 4324,
+    "pantsbuild/pants": 3764,
+    "suptejas/fleet": 2415,
+    "TraceMachina/nativelink": 1522
+  },
+  "Debugging": {
+    "godzie44/BugStalker": 1359,
+    "kxxt/tracexec": 432
+  },
+  "Deployment": {
+    "release-plz/release-plz": 1360
+  },
+  "Formatters": {
+    "astral-sh/ruff": 47307,
+    "rust-lang/rustfmt": 6810,
+    "dprint/dprint": 3906,
+    "jinxdash/prettier-plugin-rust": 204
+  },
+  "Profiling": {
+    "sharkdp/hyperfine": 28021,
+    "bheisler/criterion.rs": 5467,
+    "koute/bytehound": 4779,
+    "pawurb/hotpath-rs": 1452,
+    "nvzqz/divan": 1392
+  },
+  "Services": {
+    "sopaco/deepwiki-rs": 945,
+    "deps-rs/deps.rs": 483
+  },
+  "Static analysis": {
+    "verus-lang/verus": 2521,
+    "creusot-rs/creusot": 1568,
+    "endorlabs/MIRAI": 210,
+    "safer-rust/RAPx": 144,
+    "nwiizo/cargo-coupling": 73
+  },
+  "Transpiling": {
+    "immunant/c2rust": 4687,
+    "BayesWitnesses/m2cgen": 2977,
+    "jameysharp/corrode": 2188
+  },
+  "Tunnel": {
+    "rathole-org/rathole": 13467,
+    "ekzhang/bore": 11091,
+    "ngrok/ngrok-rust": 374
+  }
+}

@@ -1,0 +1,21 @@
+﻿repo_name;system_summary;initial_notes_thread_model_workload
+rustdesk/rustdesk;Remote desktop application (screen sharing, input forwarding, networking, multimedia streaming);Real-time video/audio streaming (CPU + IO), continuous networking, and UI/input handling. Likely uses async networking + dedicated threads for encoding/decoding and system interaction.
+dani-garcia/vaultwarden;Self-hosted Bitwarden backend server (HTTP API + DB + authentication);Web server architecture, HTTP + DB interactions dominate --> typical Rust servers use async runtimes (Rocket/Tokio). Minimal CPU-heavy work beyond serialisation and crypto.
+topjohnwu/Magisk;Android systemless rooting and module management framework;CPU: boot image patching, script/module execution,system modification logic, IO: filesystem operations, mounting partitions, interacting with Android system interfaces -> hybrid. Staged architecture (install -> patch -> mount etc) -> suggests pipeline. Dedicated worker threads can be used to isolate system-level operations from UI/CLI interactions.
+alacritty/alacritty;GPU-accelerated terminal emulator;IO: keyboard input, terminal I/O, CPU: glyph rasterization, command submission, frame updates -> hybrid. Event-loop: for input/event dispatch and OS integration, Dedicated worker threads: isolate rendering and heavy computation from event handling 
+helix-editor/helix;Text editor with LSP integration and terminal UI;IO: LSP, file reading/writing, terminal input/output, CPU: syntax highlighting, parsing, incremental updates -> hybrid. Event loop: UI/input handling, Message-driven: coordinate editor, LSP clients, and rendering subsystems
+farion1231/cc-switch;CLI tool for switching and managing Cargo compiler configurations;Filesystem interaction, configuration management, subprocess execution. Likely coordination-heavy. Shared state probably used for configuration/session management while async tasks handle CLI and external tool interactions.
+sharkdp/fd;Parallel file-search, alternative to find;Filesystem traversal and metadata access are I/O-heavy, recursive directory scanning, regex matching, and filtering are CPU/heavy. Rust search tools commonly use rayon-style thread pools for scalable parallel traversal
+nushell/nushell;Shell and scripting environment with pipelines and plugin execution;Shell execution: I/O, pipelines, interactive terminal coordination, parsing, and plugin execution. Likely uses async runtime for command orchestration and coordination between pipeline stages and plugins.
+lapce/lapce;Code editor with LSP support and reactive UI;UI rendering, LSP communication (async), filesystem watching, syntax analysis, and rendering coordination. Likely separates UI from background worker tasks
+sxyazi/yazi;Terminal file manager with async filesystem operations and preview system;Filesystem traversal, preview loading, terminal rendering, file preview execution. Async coordination likely handles UI responsiveness, worker threads isolate preview and filesystem tasks
+firecracker-microvm/firecracker;Rust-based microVM monitor built by Amazon Web Services. Uses Linux KVM to run lightweight virtual machines with strong isolation, fast startup times, and low resource overhead. Designed for serverless and container workloads;API server, VMM, vCPU threads. High-density microVMs for serverless functions, containers, and multi-tenant cloud environments
+casey/just;Command runner, lets developers define project tasks in a justfile and execute them with simple commands.Focuses on task execution rather than build automation, recipe dependencies, arguments, environment variable support, and cross-platform execution;CLI application, Parsing justfiles, dependency resolution, command execution, and shell process management. Parser/AST handling, recipe execution engine, dependency graph resolution, variable evaluation, and shell integration. Lightweight developer productivity tool.
+surrealdb/surrealdb;;
+qdrant/qdrant;;
+jdx/mise;;
+rustfs/rustfs;;
+cloudflare/pingora;;
+neondatabase/neon;;
+tursodatabase/turso;;
+ast-grep/ast-grep;;
