@@ -84,7 +84,8 @@ group_order = [
     "F. Other / Unclassified"
 ]
 
-role_tm_grouped = role_tm_grouped.reindex(group_order).fillna(0)
+role_tm_grouped = role_tm_grouped.reindex(group_order).fillna(0).astype(int)
+role_tm_grouped = role_tm_grouped.loc[(role_tm_grouped != 0).any(axis=1)]
 
 plt.figure(figsize=(11, 6))
 
